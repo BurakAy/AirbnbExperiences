@@ -1,0 +1,12 @@
+.navbar--container {
+    padding: 22px 30px;
+    max-height: 70px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.navbar--logo {
+    width: 82px;
+}
