@@ -13,7 +13,8 @@ const Card = () => {
         <p className="card--rating">
           <img src={staricon} alt="star rating" className="card--star_icon" />
           <span className="card--rating_text">5.0&nbsp;</span>
-          <span className="card--rating_count">(6) &bull; USA</span>
+          <span className="card--rating_count">(6) &bull;</span>
+          <span className="card--rating_country">&nbsp;USA</span>
         </p>
         <p className="card--title">Life lessons with Katie Zaferes</p>
         <p className="card--pricing">

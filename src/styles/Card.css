@@ -54,7 +54,8 @@
     color: #222222;
 }
 
-.card--rating_count {
+.card--rating_count,
+.card--rating_country {
     color: #918E9B;
 }
 
