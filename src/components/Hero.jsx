@@ -3,7 +3,7 @@ import groupimage from "../assets/airbnb_group.png";
 
 const Hero = () => {
   return (
-    <div className="hero--container">
+    <section className="hero--container">
       <img
         src={groupimage}
         alt="Airbnb group of images"
@@ -16,7 +16,7 @@ const Hero = () => {
           without leaving home.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
