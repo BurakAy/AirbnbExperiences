@@ -1,0 +1,30 @@
+.hero--container {
+    margin-top: 26px;
+    margin-bottom: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    padding: 0 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero--image {
+    width: 395px;
+    align-self: center;
+}
+
+.hero--text h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 110%;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.hero--text p {
+    max-width: 320px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 110%;
+    color: #222222;
+}
