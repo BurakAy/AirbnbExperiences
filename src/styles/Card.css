@@ -1,0 +1,54 @@
+.card--container {
+    max-width: 176px;
+    padding: 0 36px;
+    margin-bottom: 30px;
+}
+
+.card--image_wrapper {
+    max-height: 235px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.card--image {
+    width: 100%;
+}
+
+.card--rating {
+    margin-top: 9px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 110%;
+}
+
+.card--star_icon {
+    width: 14px;
+    height: auto;
+    padding-right: 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.card--rating_text {
+    color: #222222;
+}
+
+.card--rating_count {
+    color: #918E9B;
+}
+
+.card--title {
+    margin: 8px 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 110%;
+    color: #222222;
+}
+
+.card--pricing {
+    font-size: 12px;
+    line-height: 110%;
+    color: #222222;
+    margin-top: 8px;
+}
