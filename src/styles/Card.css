@@ -8,8 +8,6 @@
 .card--image_wrapper {
     max-height: 235px;
     border-radius: 9px;
-    overflow: hidden;
-    position: relative;
 }
 
 .card--image_label {
