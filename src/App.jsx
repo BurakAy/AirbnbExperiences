@@ -2,7 +2,6 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
-import katieimage from "./assets/katie_z.png";
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
       <Hero />
       <Card
         label="sold out"
-        img={katieimage}
+        img="katie_z.png"
         rating={parseFloat(5.0).toFixed(1)}
         count={6}
         country="USA"

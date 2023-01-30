@@ -9,7 +9,11 @@ const Card = (props) => {
         {props.label && (
           <span className="card--image_label">{props.label}</span>
         )}
-        <img src={props.img} alt="Katie Zaferes" className="card--image" />
+        <img
+          src={`../src/assets/${props.img}`}
+          alt=""
+          className="card--image"
+        />
       </div>
       <div className="card--details">
         <p className="card--rating">
