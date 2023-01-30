@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <div className="cards--wrapper">{cards}</div>
+      <section className="cards--wrapper">{cards}</section>
     </div>
   );
 }
