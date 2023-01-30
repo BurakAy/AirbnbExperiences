@@ -10,7 +10,7 @@ const Card = (props) => {
           <span className="card--image_label">{props.label}</span>
         )}
         <img
-          src={`../src/assets/${props.img}`}
+          src={`../src/images/${props.img}`}
           alt=""
           className="card--image"
         />

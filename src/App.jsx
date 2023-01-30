@@ -2,21 +2,30 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
+import cardData from "./components/data";
 
 function App() {
+  const cards = cardData.map((info) => {
+    const card = (
+      <Card
+        key={info.id}
+        label={info.status}
+        img={info.coverImg}
+        rating={info.stats.rating}
+        count={info.stats.reviewCount}
+        country={info.location}
+        title={info.title}
+        price={info.price}
+      />
+    );
+    return card;
+  });
+
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      <Card
-        label="sold out"
-        img="katie_z.png"
-        rating={parseFloat(5.0).toFixed(1)}
-        count={6}
-        country="USA"
-        title="Life lessons with Katie Zaferes"
-        price="136"
-      />
+      <div className="cards--wrapper">{cards}</div>
     </div>
   );
 }
