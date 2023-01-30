@@ -3,10 +3,10 @@ import staricon from "../assets/star.png";
 
 const Card = (props) => {
   let labelText;
-  if (props.info.openSpots === 0) {
+  if (props.openSpots === 0) {
     labelText = "sold out";
-  } else if (props.info.openSpots > 0 && props.info.location == "Online") {
-    labelText = props.info.location;
+  } else if (props.openSpots > 0 && props.location == "Online") {
+    labelText = props.location;
   }
 
   return (
@@ -14,7 +14,7 @@ const Card = (props) => {
       <div className="card--image_wrapper">
         {labelText && <span className="card--image_label">{labelText}</span>}
         <img
-          src={`../src/images/${props.info.coverImg}`}
+          src={`../src/images/${props.coverImg}`}
           alt=""
           className="card--image"
         />
@@ -23,18 +23,16 @@ const Card = (props) => {
         <p className="card--rating">
           <img src={staricon} alt="star rating" className="card--star_icon" />
           <span className="card--rating_num">
-            {parseFloat(props.info.stats.rating).toFixed(1)}&nbsp;
+            {parseFloat(props.stats.rating).toFixed(1)}&nbsp;
           </span>
           <span className="card--rating_count">
-            ({props.info.stats.reviewCount}) &bull;
+            ({props.stats.reviewCount}) &bull;
           </span>
-          <span className="card--rating_country">
-            &nbsp;{props.info.location}
-          </span>
+          <span className="card--rating_country">&nbsp;{props.location}</span>
         </p>
-        <p className="card--title">{props.info.title}</p>
+        <p className="card--title">{props.title}</p>
         <p className="card--pricing">
-          <strong>From ${props.info.price}</strong> / person
+          <strong>From ${props.price}</strong> / person
         </p>
       </div>
     </div>
