@@ -9,13 +9,13 @@ function App() {
     const card = (
       <Card
         key={info.id}
-        label={info.status}
         img={info.coverImg}
         rating={info.stats.rating}
         count={info.stats.reviewCount}
         country={info.location}
         title={info.title}
         price={info.price}
+        label={info.openSpots}
       />
     );
     return card;

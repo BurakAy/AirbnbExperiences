@@ -3,12 +3,17 @@ import "../styles/Card.css";
 import staricon from "../assets/star.png";
 
 const Card = (props) => {
+  let labelText;
+  if (props.label === 0) {
+    labelText = "sold out";
+  } else if (props.label > 0 && props.country == "Online") {
+    labelText = props.country;
+  }
+
   return (
     <div className="card--container">
       <div className="card--image_wrapper">
-        {props.label && (
-          <span className="card--image_label">{props.label}</span>
-        )}
+        {labelText && <span className="card--image_label">{labelText}</span>}
         <img
           src={`../src/images/${props.img}`}
           alt=""
